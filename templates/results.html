@@ -1,0 +1,77 @@
+{% extends '_partials/base.html' %}
+
+{% block content%}
+<div class="container">
+        <h3>Polls Results</h3>
+        <h5>{{poll.poll_title}}</h5>
+        <div class="option">
+            <div class="option-p">
+                <p>{{poll.option1}}</p>
+            </div>
+            <div class="progress option-p">
+                <div class="progress-value">{{per1|floatformat:2 }}%</div>
+                <div class="progress-done">
+                </div>
+            </div>
+            <div class="option-p">
+                <span>{{poll.c_option1}} votes</span>
+            </div>
+        </div>
+        <div class="option">
+            <div class="option-p">
+                <p>{{poll.option2}}</p>
+            </div>
+            <div class="progress option-p">
+                <div class="progress-value">{{per2|floatformat:2}}%</div>
+                <div class="progress-done">
+                </div>
+            </div>
+            <div class="option-p">
+                <span>{{poll.c_option2}} votes</span>
+            </div>
+        </div>
+        <div class="option">
+            <div class="option-p">
+                <p>{{poll.option3}}</p>
+            </div>
+            <div class="progress option-p">
+                <div class="progress-value">{{per3|floatformat:2}}%</div>
+                <div class="progress-done">
+                </div>
+            </div>
+            <div class="option-p">
+                <span>{{poll.c_option3}} votes</span>
+            </div>
+        </div>
+        <div class="option">
+            <div class="option-p">
+                <p>{{poll.option4}}</p>
+            </div>
+            <div class="progress option-p">
+                <div class="progress-value">{{per4|floatformat:2}}%</div>
+                <div class="progress-done">
+                </div>
+            </div>
+            <div class="option-p">
+                <span>{{poll.c_option4}} votes</span>
+            </div>
+        </div>
+        <div class="option">
+            <div class="option-p">
+                <p>{{poll.option5}}</p>
+            </div>
+            <div class="progress option-p">
+                <div class="progress-value">{{per5|floatformat:2}}%</div>
+                <div class="progress-done">
+                </div>
+            </div>
+            <div class="option-p">
+                <span>{{poll.c_option5}} votes</span>
+            </div>
+        </div>
+        <div class="option-v">
+            <h5>Total Votes:</h5>&nbsp;&nbsp;&nbsp;<span>{{total}} votes</span>
+        </div>
+
+    </div>
+{% endblock%}

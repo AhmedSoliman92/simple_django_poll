@@ -1,0 +1,28 @@
+{% extends '_partials/base.html' %}
+
+{% block content%}
+ 
+        <div class="container">
+            <h3>Cast your vote</h3>
+
+            <form action={% url 'vote' poll.id %} method="POST">
+                {% csrf_token%}
+                <div class="poll-form">
+                    <label class="lbl-vote">
+                        <input type="radio" name="poll" value="option1" required>
+                        {{poll.option1}}
+                    </label>
+                    <label class="lbl-vote">
+                        <input type="radio" name="poll" value="option2">
+                        {{poll.option2}}
+                    </label>
+                    <label class="lbl-vote">
+                        <input type="radio" name="poll" value="option3">
+                        {{poll.option3}}
+                    </label>
+                    <input type="submit" value="Submit" class="btn">
+                </div>
+            </form>
+        </div>
+
+{% endblock %}

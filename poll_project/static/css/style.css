@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@450");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f8ff;
+  font-family: "Muli", "sans-serif";
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  background-color: #24a0ed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #f0f8ff;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.logo {
+  background-color: #f0f8ff;
+  color: #24a0ed;
+  width: 60px;
+  height: 060px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin: 1px 10px;
+  font-size: 2.5rem;
+}
+.container {
+  border: 1px solid #dcdcdc;
+  width: 50%;
+  min-width: 400px;
+  height: auto;
+  border-radius: 5px;
+  margin: 50px;
+  padding: 0 30px 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+}
+.option-p {
+  width: 30%;
+  margin: 0 5px;
+}
+.progress {
+  background-color: #f0f8ff;
+  height: 20px;
+  border-radius: 20px;
+  margin: 0px;
+  border: 2px solid #dcdcdc;
+  text-align: center;
+  position: relative;
+  width: 50%;
+}
+.progress .progress-done {
+  background-color: #24a0ed;
+  border: 1px solid #24a0ed;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.progress .progress-value {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 2px;
+  font-size: 0.7rem;
+}
+.option-v {
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.option-b {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+}
+
+.btn {
+  background-color: #24a0ed;
+  border: 0;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  color: #f0f8ff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.poll-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.poll-form .lbl-vote {
+  padding: 10px;
+}
+
+.inputs {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 90%;
+  min-width: 300px;
+  background-color: #f0f8ff;
+  border:1px solid #dcdcdc;
+  font-size: 18px;
+}
+.inputs:focus{
+  outline-color: #24a0ed;
+}

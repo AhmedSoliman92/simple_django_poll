@@ -1,0 +1,29 @@
+{% extends '_partials/base.html' %}
+
+{% block content%}
+<div class="container">
+    <h3>Available Polls</h3>
+
+    {% for poll in polls %}
+        <div class="option">
+                <div class="option-p">
+                    
+                    <p>{{poll.poll_title}}</p>
+                    
+                </div>
+                <div class="option-p">
+
+                </div>
+                <div class="option-b">
+                    <a href={% url 'vote' poll.id %} class="btn">
+                        Vote
+                    </a>
+                    <a class="btn" href={% url 'results' poll.id %}>
+                        View
+                    </a>
+                </div>
+    
+        </div>
+    {% endfor %}
+</div>
+{% endblock%}
